@@ -1,0 +1,52 @@
+{
+  "tool": "x-miner",
+  "version": "0.2-twitterapi-io",
+  "provider": "twitterapi.io",
+  "target": "leirediezpas",
+  "targetUserId": "1571450405984378884",
+  "query": "(from:leirediezpas OR to:leirediezpas OR @leirediezpas OR leirediezpas OR \"Leire Díez\" OR \"Leire Diez\")",
+  "startTime": "2006-03-21T00:00:00Z",
+  "endTime": "2019-12-31T23:59:59Z",
+  "generatedAt": "2026-06-08T00:15:06.081Z",
+  "source": "TwitterAPI.io advanced search",
+  "endpoint": "/twitter/tweet/advanced_search",
+  "notes": [
+    "Dataset basado en tweets publicos recuperados por query. No prueba relaciones fuera de lo observable en X.",
+    "Proveedor cambiado a twitterapi.io por control de coste. Cada pagina devuelve hasta 20 tweets.",
+    "Los CSV completos son la fuente principal. El HTML puede limitar el numero de tweets embebidos para mantener rendimiento."
+  ],
+  "options": {
+    "window": "year",
+    "maxPages": "1",
+    "expanded": true,
+    "queryType": "Latest",
+    "splitThreshold": 20,
+    "minWindowSeconds": 60,
+    "maxExpansionTweets": "all",
+    "maxExpansionPagesPerTweet": "all",
+    "delayMs": 1500,
+    "htmlMaxTweets": 20000,
+    "renderOnly": true
+  },
+  "completedAt": "2026-06-08T00:15:07.518Z",
+  "counts": {
+    "tweets": 12830,
+    "users": 3859,
+    "edges": 91148,
+    "aggregateEdges": 39676,
+    "media": 0
+  },
+  "files": {
+    "tweetsCsv": "tweets.csv",
+    "sourcesCsv": "sources.csv",
+    "usersCsv": "users.csv",
+    "edgesCsv": "edges.csv",
+    "aggregateEdgesCsv": "edges-aggregated.csv",
+    "gephiNodesCsv": "gephi-nodes.csv",
+    "gephiEdgesCsv": "gephi-edges.csv",
+    "gephiGexf": "graph-gephi.gexf",
+    "graphJson": "graph.json",
+    "rawPagesNdjson": "raw-pages.ndjson",
+    "html": "report.html"
+  }
+}
